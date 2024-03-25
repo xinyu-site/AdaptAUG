@@ -1,44 +1,26 @@
 <div style="background-position: center center; background-image: url('img/titlepic.jpg'); background-size: cover; width: 100%; color: white; text-align: center; padding: 100px 0;">
-  <h1>Leveraging Partial Symmetry for Multi-Agent Reinforcement Learning</h1>
-  <h3 style="font-style: italic;">Xin Yu, Rongye Shi*, Pu Feng, Yongkai Tian, Simin Li, Shuhao Liao, Wenjun Wu</h3>
-  <p>The 38th Annual AAAI Conference on Artificial Intelligence (AAAI 2024)</p>
-  <p><span><a href="./pdf/PSE.pdf" style="color: white; text-decoration: underline;">[Paper]</a></span>&nbsp;&nbsp;&nbsp;<span><a href="./pdf/sup.pdf" style="color: white; text-decoration: underline;">[Supplementary]</a></span></p>
+  <h1>AdaptAUG: Adaptive Data Augmentation Framework for Multi-Agent Reinforcement Learning</h1>
+  <h3 style="font-style: italic;">Xin Yu1 Yongkai Tian, Li Wang, Pu Feng, Wenjun Wu, and Rongye Shi*</h3>
+  <p>2024 IEEE International Conference on Robotics and Automation (ICRA 2024)</p>
+  <p><span><a href="./pdf/AdaptAUG.pdf" style="color: white; text-decoration: underline;">[Paper]</a></span></p>
 </div>
 
 <div style="width: 70%; margin: auto;">
   <h2 style="text-align: left;">Abstract</h2>
-  <p style="font-style: italic; font-size: 1.2em; line-height: 1.3;">Incorporating symmetry as an inductive bias into multi-agent reinforcement learning (MARL) has led to improvements in generalization, data efficiency, and physical consistency. While prior research has succeeded in using perfect symmetry prior, the realm of partial symmetry in the multi-agent domain remains unexplored. To fill in this gap, we introduce the partially symmetric Markov game, a new subclass of the Markov game. We then theoretically show that the performance error introduced by utilizing symmetry in MARL is bounded, implying that the symmetry prior can still be useful in MARL even in partial symmetry situations. Motivated by this insight, we propose the Partial Symmetry Exploitation (PSE) framework that is able to adaptively incorporate symmetry prior in MARL under different symmetry-breaking conditions. Specifically, by adaptively adjusting the exploitation of symmetry, our framework is able to achieve superior sample efficiency and overall performance of MARL algorithms. Extensive experiments are conducted to demonstrate the superior performance of the proposed framework over baselines. Finally, we implement the proposed framework in real-world multi-robot testbed to show its superiority.</p>
+  <p style="font-style: italic; font-size: 1.2em; line-height: 1.3;">Multi-agent reinforcement learning has emerged as a promising approach for the control of multi-robot systems. Nevertheless, the low sample efficiency of MARL poses a significant obstacle to its broader application in robotics. While data augmentation appears to be a straightforward solution for improving sample efficiency, it usually incurs training instability, making the sample efficiency worse. Moreover, manually choosing suitable augmentations for a variety of tasks is a tedious and time-consuming process. To mitigate these challenges, our research theoretically analyzes the implications of data augmentation on MARL algorithms. Guided by these insights, we present AdaptAUG, an adaptive framework designed to selectively identify beneficial data augmentations, thereby achieving superior sample efficiency and overall performance in multi-robot tasks. Extensive experiments in both simulated and real-world multi-robot scenarios validate the effectiveness of our proposed framework.</p>
 
-  <h2 style="text-align: left;">Videos</h2>
-  <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 5px; justify-items: center;">
-    <div>
-      <iframe src="//player.bilibili.com/player.html?bvid=BV1nj411W7bE&page=1" style="width: 600px; height: 380px;" frameborder="0" allowfullscreen="true"></iframe>
-      <p style="width: 550px; text-align: center;">MAPPO </p>
-    </div>
-    <div>
-      <iframe src="//player.bilibili.com/player.html?bvid=BV1wW4y1F7xf&page=1" style="width: 600px; height: 380px;" frameborder="0" allowfullscreen="true"></iframe>
-      <p style="width: 550px; text-align: center;">MAPPO-ESP</p>
-    </div>
+  <h2 style="text-align: left;">Methods</h2>
   
-    <div>
-      <iframe src="//player.bilibili.com/player.html?bvid=BV1ug4y1C7gU&page=1" style="width: 600px; height: 380px;" frameborder="0" allowfullscreen="true"></iframe>
-      <p style="width: 550px; text-align: center;">MAPPO</p>
-    </div>
-    
-    <div>
-      <iframe src="//player.bilibili.com/player.html?bvid=BV1NG411Y7Zq&page=1" style="width: 600px; height: 380px;" frameborder="0" allowfullscreen="true"></iframe>
-      <p style="width: 550px; text-align: center;">MAPPO-ESP</p>
-    </div>
+
+  This paper focuses on solving the following problem: \textit{How to choose appropriate augmentation methods to enhance the performance of MARL in a specific task?} We introduce a general framework called Adaptive Data Augmentation (AdaptAUG) for selecting augmentation methods. The AdaptAUG framework is illustrated in as below
+  .
+  
+  <!-- 插入图像的新区域 -->
+  <div style="width: 100%; text-align: center; padding: 50px 0;">
+    <img src='img/framework.png' alt="Framework Image" style="max-width: 100%; height: auto;">
   </div>
+  
 
-
-
-
-  <h2 style="text-align: left;">Code</h2>
-  <p>Coming soon.</p>
-
-  <h2 style="text-align: left;">Citation</h2>
-  <p>Coming soon.</p>
 
   <h2 style="text-align: left;">Contact</h2>
   <p>If you have any questions, please feel free to contact <a href="https://xjtueryx.github.io">Xin Yu</a> at nlsdeyuxin[at]buaa[dot]edu[dot]cn[dot].</p>
